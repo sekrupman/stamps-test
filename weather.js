@@ -16,7 +16,7 @@ async function getWeather() {
     data.list.forEach(item => {
         const date = new Date(item.dt * 1000);
 
-        const day = date.toLocaleDateString("en-US", {
+        const day = date.toLocaleDateString("en-GB", {
             weekday: "short",
             day: "2-digit",
             month: "short",
